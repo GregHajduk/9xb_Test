@@ -1,15 +1,12 @@
 package pageObjects;
 
-import lombok.Getter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static pageObjects.BasePage.getDriver;
-@Getter
+
 public class Sign_In_Page {
-    public By getMainPageTitleLocator() {
-        return mainPageTitleLocator;
-    }
 
     private final By emailLocator = By.xpath("//form[@id='login-form']//input[@type='email']");
     private final By passwordLocator = By.xpath("//form[@id='login-form']//input[@type='password']");
