@@ -1,6 +1,5 @@
 package stepsDefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,7 +20,7 @@ public class Main_Page_Steps {
     }
 
     @When("the user enters already registered email into the subscribe filed")
-    public void theUserEntersAlreadyRegisteredEmailIntoTheSubscribeFiled() throws InterruptedException {
+    public void theUserEntersAlreadyRegisteredEmailIntoTheSubscribeFiled(){
         sendKeys(mainPage.getEmailField(), uniqueEmail);
     }
 

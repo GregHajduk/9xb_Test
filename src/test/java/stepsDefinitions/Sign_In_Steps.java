@@ -4,17 +4,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pageObjects.Sign_In_Page;
 
 import static pageObjects.BasePage.*;
-import static stepsDefinitions.Base_Steps.baseUrl;
 
 public class Sign_In_Steps {
     Sign_In_Page page = new Sign_In_Page();
-
-    private final WebDriver driver = getDriver();
 
     @Given("the user accesses the myStore main page")
     public void theUserAccessesTheMyStoreMainPage() {

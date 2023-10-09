@@ -15,12 +15,6 @@ public class Products_Page_Steps {
         productsPage.getAllProductsLink().click();
     }
 
-    @Then("the user is redirected to the Products Home page")
-    public void theUserIsRedirectedToTheProductsHomePage() {
-//        String CurrentPageTitle = page.getMainPageTitle().getText().trim();
-//        Assert.assertEquals(CurrentPageTitle, pageTitle);
-    }
-
     @And("the user checks the {string} checkbox")
     public void theUserChecksTheProductTypeCheckbox(String ProductType) {
         switch (ProductType.toLowerCase()) {

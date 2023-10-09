@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class BasePage {
 
-
+    public static final String baseUrl = "http://teststore.automationtesting.co.uk/";
     static WebDriver driver = null;
 
     public static WebDriver getDriver() {

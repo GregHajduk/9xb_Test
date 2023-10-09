@@ -8,7 +8,6 @@ import static pageObjects.BasePage.getDriver;
 import static pageObjects.BasePage.tearDown;
 
 public class Base_Steps {
-    public static final String baseUrl = "http://teststore.automationtesting.co.uk/";
 
     @BeforeAll
     public static void setUp() {
